@@ -1,0 +1,27 @@
+/* drie basisstijlregels om je te helpen */
+:root {font-size: 100%;  /* zet je dit op 62.5%, dan is elke rem 10px waard, anders 16px */ }
+html {box-sizing: border-box;}
+*, *:before, *:after {box-sizing: inherit;}
+
+
+/* gebruikte kleuren */
+
+main ul li:nth-child(1) {background-color: #1ED760;color: #121212;}
+main ul li:nth-child(2) {background-color: #5352ED;color: #FDFEFE;}
+main ul li:nth-child(3) {background-color: #FF4B6E;color: #121212;}
+main ul li:nth-child(4) {background-color: #26D0CE;color: #0C0C0C;}
+main ul li:nth-child(5) {background-color: #F9ED69;color: #1A1A1A;}
+main ul li:nth-child(6) {background-color: #6A0572;color: #FAFAFA;}
+main ul li:nth-child(7) {background-color: #00A8E8;color: #FFF;}
+main ul li:nth-child(8) {background-color: #1E1E1E;color: #B2F2BB;}
+main ul li:nth-child(9) {background-color: #FF9F1C;color: #0D0D0D;}
+
+/* de andere gebruikte kleuren zijn black, white en red (elementen van de grids binnen de figuren) */
+
+body {
+    font-size: 1.4rem;
+    font-family: lato, arial, sans-serif;
+    line-height: 2rem;
+    background-color: black;}
+
+/* hier komt jouw css */

@@ -1,0 +1,29 @@
+:root {
+    --color-achtergrond1: #caf0f8;
+    --color-tekst1: #0d1321;
+    --color-achtergrond2: #90e0ef;
+    --color-tekst2: #1d2d44;
+    --color-hover: #f0ebd8;
+    --font-basis: Verdana, sans-serif;
+    --size-basis: 1rem;
+}
+
+body {
+    background-color: var(--color-achtergrond1);
+    color: var(--color-tekst1);
+    font-family: var(--font-basis);
+    font-size: var(--size-basis);
+    line-height: 1.5;
+}
+
+nav a{
+    color: var(--color-tekst2);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover, nav a:focus {
+    background-color: var(--color-tekst2);
+    color: var(--color-hover);
+    text-decoration: none;
+}
