@@ -2,7 +2,53 @@
 
 /* === tokens === */
 :root {
-
+    --color-tekst: #282827;
+    --color-geel: #fccc00;
+    --font-body: Arial, Helvetica, sans-serif;
+    --color-hover: #333333;
+    --color-ink: #000000;
 }
 
 /* === your rules === */
+body {
+    font-family: var(--font-body);
+    text-align: center;
+    color: var(--color-tekst);
+    width: 80vw;
+    max-width: 40rem;
+    margin: 12rem auto 0;
+}
+
+h2 {
+    font-size: 4.5rem;
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+    color: var(--color-ink);
+}
+
+h2 span {
+    border-bottom: 1rem solid var(--color-geel);
+    border-radius: 50%;
+}
+
+p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+a {
+    font-size: 0.875rem;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 1rem;
+}
+
+a:hover,
+a:focus {
+    background-color: #333333;
+}

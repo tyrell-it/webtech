@@ -2,7 +2,49 @@
 
 /* === tokens === */
 :root {
-
+    --color-tomato: #FF6347;
+    --color-orangered: #FF4500;
+    --color-coral: #FF7F50;
+    --color-lightsalmon: #FFA07A;
+    --color-darkorange: #FF8C00;
+    --band-height: 50vh;
 }
 
 /* === your rules === */
+body {
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    letter-spacing: 0.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0%;
+    margin: 0%;
+}
+
+li {
+    height: 50vh;
+    padding-top: 11rem;
+}
+
+.codes {
+    font-size: 0.75rem;
+}
+
+.codes span {
+    margin: 0 0.75rem;
+}
+
+.tomato { background-color: var(--color-tomato);}
+.orangered { background-color: var(--color-orangered);}
+.coral { background-color: var(--color-coral);}
+.lightsalmon { background-color: var(--color-lightsalmon);}
+.darkorange { background-color: var(--color-darkorange);}
