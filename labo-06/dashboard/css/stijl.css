@@ -1,0 +1,67 @@
+/* stijl.css - labo 6, dashboard (reset.css is linked before this file) */
+
+/* === tokens === */
+:root {
+
+}
+
+/* === base: narrow screens first === */
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 1fr);
+    height: 100svh;
+    gap: 0.5rem;
+    color: white;
+    padding: 0.5rem;
+}
+
+.tegel.titel {
+    background-color: black;
+    padding: 0.5rem;
+}
+
+.tegel.grafiek {
+    background-color: blue;
+    padding: 0.5rem;
+}
+
+.tegel.omzet {
+    background-color: orange;
+    padding: 0.5rem;
+}
+
+.tegel.bezoekers {
+    background-color: green;  
+    padding: 0.5rem;
+}
+
+.tegel.agenda {
+    background-color: purple;  
+    padding: 0.5rem;
+}
+
+.tegel.taken {
+    background-color: red;  
+    padding: 0.5rem;
+}
+
+.tegel.weer {
+    background-color: yellow;  
+    padding: 0.5rem;
+}
+/* === media queries: below the base rules === */
+@media (min-width: 800px) {
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+.tegel.titel {grid-column: 1/3; grid-row: 1;}
+.tegel.grafiek {grid-column: 1/3; grid-row: 2;}
+.tegel.omzet {grid-column: 1/2; grid-row: 3;}
+.tegel.bezoekers {grid-column: 2/3; grid-row: 3;}
+.tegel.agenda {grid-column: 1/2; grid-row: 4;}
+.tegel.taken {grid-column: 2/3; grid-row: 4;}
+.tegel.weer {grid-column: 1/3; grid-row: 5;}
+}
