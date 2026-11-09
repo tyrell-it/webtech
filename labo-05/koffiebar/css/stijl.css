@@ -1,0 +1,85 @@
+/* stijl.css - labo 5, koffiebar (reset.css is linked before this file) */
+
+/* === tokens === */
+:root {
+    --papier: #f4efe6;
+    --bruin: #2f241d;
+    --oranje: #c8742e;
+}
+
+/* === your rules === */
+body {
+    background-color: var(--papier);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,1fr);
+    height: 100vh;
+}
+
+header {
+    grid-column: 1/5;
+    grid-row: 1/2;
+    background-color: var(--bruin);
+    height: 3.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.logo {
+    color:#c8742e;
+    font-size: 1.75rem;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+nav ul {
+    display: flex;
+    gap: 1rem;
+    padding: 0.5rem;
+    list-style: none;
+}
+
+nav a {
+    color: #f4efe6;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #c8742e;
+}
+
+aside {
+    grid-column: 1/2;
+    grid-row: 2/5;
+}
+
+main {
+    grid-column: 2/5;
+    grid-row: 2/5;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+
+h1,p{
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+
+.kaarten {
+    grid-column: 1/4;
+    grid-row: 2/4;
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+
+footer{
+    grid-column: 1/-1;
+    grid-row: 5/6;
+}

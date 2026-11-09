@@ -1,0 +1,23 @@
+/* stijl.css - labo 5, citaten (reset.css is linked before this file) */
+
+/* === tokens === */
+:root {
+
+}
+
+/* === your rules === */
+.citaten {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+blockquote {
+    border-left: 0.25rem solid;
+    line-height: 1.5;
+    padding: 0.5rem 1rem;
+    width: 18rem;
+}
